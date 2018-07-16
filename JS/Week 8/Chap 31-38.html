@@ -1,0 +1,293 @@
+<head>
+    <script>
+    //Question 1
+    // var date = new Date();
+    // document.write(date)
+
+    //Question 2
+    // var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    // var date = new Date();
+    // var month = date.getMonth();
+    // document.write(months[month]);
+
+    //Question 3
+    // var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    // var date = new Date();
+    // var day = date.getDay()
+    // document.write(days[day].slice(0,3));
+
+    //Question 4
+    // var date = new Date();
+    // var day = date.getDay();
+    // if(day == 6 || day == 0)
+    //    document.write("Its a fun day")
+
+    //Question 5
+    // var Date = new Date();
+    // var date = Date.getDate();
+    // if(date <=15)
+    //     document.write("First fifteen days of the month")
+    // else
+    //     document.write("Last fifteen days of the month")
+
+    //Question 6
+    // var date = new Date();
+    // var miliSec =  date.getTime();
+    // document.write("Current Date: "+date+"<br>Elapsed milliSeconds since January 1, 1970: "+miliSec+"<br>Elapsed minutes since January 1, 1970: "+ miliSec/(1000 * 60 ) );
+    
+    //Question 7
+    // var date = new Date();
+    // var hour = date.getHours();
+    // if(hour <12)
+    //   document.write("Its AM")
+    // else 
+    //   document.write("Its PM")  
+    
+    //Question 8
+    // var laterDate = new Date("December 31 2020")
+    // document.write(laterDate)
+
+    //Question 9
+    // var date0 = new Date("June 18 2015");
+    // var miliSec0 = date0.getTime();
+    // var date1 = new Date();
+    // var miliSec1 = date1.getTime();
+    // var diff =  miliSec1 -  miliSec0;
+    // document.write(parseInt(diff/ (1000 * 60 * 60 * 24))+" days have paseed since 1st Ramadan, 2015")
+
+    //Question 10
+    // var date = new Date("1 January 2015");
+    // var currentDate = new Date();
+    // var miliSec0 = date.getTime();
+    // var miliSec1 = currentDate.getTime();
+    // var diff =  (miliSec1 -  miliSec0)/ 1000; 
+    // document.write("On refernce date "+currentDate+", "+diff+" seconds had passed since beginning of 2015")
+
+    //Question 11
+    // var date = new Date();
+    // document.write("Current Date : "+date)
+    // date.setHours(date.getHours() - 1)
+    // document.write("<br>One hour ago, it was : "+date) 
+
+    //Question 12
+    // var date = new Date();
+    // document.write("Current Date : "+date)
+    // date.setFullYear(date.getFullYear() - 100)
+    // document.write("<br>100 years ago, it was : "+date) 
+
+    //Question 13
+    // var age = prompt("Enter your age");
+    // var date = new Date();
+    // document.write(date.getFullYear() - age);
+
+    //Question 14
+    // var name = prompt("Enter your name");
+    // var date = new Date();
+    // var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    // var month = months[date.getMonth()];
+    // var units = parseFloat(prompt("Enter no of units"))
+    // var charges = parseFloat(prompt("Enter charges per unit"));
+    // var amount = units * charges;  
+    // var lateFee = 350
+    // var gross = amount + lateFee;
+    // document.write("<h1>K-Electric Bill</h1><br><br>Customer Name: "+name+"<br>Month: "+month+"<br>Number of units: "+units+"<br>Charges per unit:"+ charges.toFixed(2))
+    // document.write("<br><br>Net Amount Payable: "+amount.toFixed(2)+"<br>Late payment surcharge: "+lateFee+"<br>Gross amount payable (after Due Date): "+gross.toFixed(2))
+    
+    //Question 15
+    //  function hello()
+    //  {
+    //      alert("Hello World")
+    //  }
+
+    //Question 16
+    // function date()
+    // {
+    //     var date = new Date();
+    //     document.write(date);
+    // }
+
+    //Question 17
+    // function fullName(fName, lName)
+    // {
+    //     alert("Hello "+fName+" "+lName)
+    // }
+
+    //Question 18
+    // var n1 = prompt("Enter a nunmber");
+    // var n2 = prompt("Enter another nunmber");
+    // alert("Sum is "+ sum(n1,n2));
+
+    // function sum(num1,num2)
+    // {
+    //     return(parseInt(num1) + parseInt(num2)) 
+    // }
+
+    //Question 19
+    // var n1 = prompt("Enter a nunmber");
+    // var n2 = prompt("Enter another nunmber");    
+    // var sign = prompt("Enter the operator");
+    // alert(calc(n1,n2,sign));
+
+    // function calc(num1,num2,operator)
+    // {
+    //     if(operator == "+")
+    //         return(parseInt(num1)+parseInt(num2))
+    //     else if(operator == "-")
+    //         return (num1 - num2)
+    //     else if(operator == "*")
+    //         return (num1 * num2)
+    //     else if(operator == "/")
+    //         return (num1 / num2)         
+    // }
+
+    //Question 20
+    // alert( "Sqaure of the entered number is "+ square (prompt("Enter a nunber")));
+
+    // function square(num)
+    // {
+    //     return num * num;
+    // }
+
+    //Question 21
+    // var num = prompt("Enter a number")
+    // alert(fact(num));
+
+    // function fact(num)
+    // {
+    //     if(num == 0 || num == 1)
+    //         return 1;
+    //     return(num * fact(num-1))
+    // }
+
+    //Question 22
+    //  var start = prompt("Enter starting number");
+    //  var end = prompt("Enter ending number"); 
+    //  for(var i = start; i <=end; i++)
+    //     document.write(i+"<br>")
+
+    //Question 23
+    //  var base = +prompt("Enter base");
+    //  var perp = +prompt("Enter perpendicular");
+    //  var hyp = calcHyp(base,perp);
+    //  alert("Hypotenuse is "+hyp);   
+
+    //  function calcHyp(b,p)
+    //  {
+    //      var bSq = square(b);
+    //      var pSq = square(p);
+    //      var temp = bSq + pSq; 
+    //      return(Math.sqrt(temp))
+    //  } 
+
+    //  function square(a)
+    //  {
+    //      return a*a;
+    //  }
+
+    //Question 24(i)
+    // function calcArea(w,h)
+    // {
+    //     return (w*h);
+    // } 
+    // alert("Area is "+calcArea(2,4));
+
+    //Question 24(ii)
+    // var w = +prompt("Enter width");
+    // var h = +prompt("Enter height");
+    // alert("Area is "+calcArea(w,h));
+    
+    // function calcArea(w,h)
+    // {
+    //     return (w*h);
+    // } 
+
+    //Question 25
+    //  var str = prompt("Enter a string");
+    //  var flag = palindrome(str);
+    //  if(flag == 1)
+    //     alert("It is a palindrome")
+    //  else  
+    //     alert("It is not a palindrome");      
+
+    // function palindrome(string)
+    // {
+    //     var limit = Math.floor(string.length/2);
+    //     for(var i =0 ; i <= limit ; i++)
+    //     {
+    //         if(string[i] != string[string.length-i-1])
+    //         {
+    //             return 0; 
+    //         }          
+    //     }
+    //     return 1;
+    // } 
+
+    //Question 26
+    // var str = "the qiuck brown fox";
+    // var titledString = title(str);
+    // document.write(titledString.replace(/,/g, " "));
+
+    // function title(string)
+    // {
+    //  var temp = string.split(" ");
+    //  for(var i=0; i< temp.length ; i++)
+    //  {  
+    //    var temp1 = temp[i].slice(1);
+    //    temp[i] = temp[i].charAt(0).toUpperCase();
+    //    temp[i] +=temp1
+    //  }
+    //  return (temp.toString())
+    // }    
+
+    //Question 27
+    //  var str = "Web Development Tutorial"
+    //  var temp = str.split(" ");
+    //  var longestVal = 0 , index = 0;
+    //  for(i = 0 ; i < temp.length ; i++)
+    //  {
+    //     if(longestVal < temp[i].length)
+    //        {
+    //         longestVal = temp[i].length
+    //         index = i;    
+    //        }
+    //  }
+    //  alert(temp[index])
+
+    //Question 28
+    // var string = prompt("Enter a string");
+    // var chr = prompt("Enter a character");
+    // var occurance = check(string,chr)
+    // alert("The number of occurance of "+chr +" in "+string+" is " +occurance);
+
+    // function check(str,char)
+    // {
+    //     var count =0
+    //     for(var i=0 ; i<str.length; i++)
+    //     {
+    //         if(str[i] == char)
+    //            count++;
+    //     }
+    //     return count;
+    // }
+
+    //Question 29
+    // var radius = prompt("Enter radius");
+    // var circumference = calcCircumference(radius);
+    // var area = calcArea(radius);
+    // alert("Circumference is :"+circumference.toFixed(2));
+    // alert("Area is: "+area.toFixed(2));
+
+    // function calcCircumference(r)
+    // {
+    //     return (2 * r * Math.PI);
+    // }
+
+    // function calcArea(r)
+    // {
+    //     return (r * r * Math.PI);
+    // }
+    </script>
+</head>
+<body>
+    
+</body>

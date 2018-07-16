@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <script>
+            //Question 1
+            // function displayData(){
+            //      document.getElementById("div").innerHTML = "Name: "+ document.getElementById("nam").value +"<br>Email: "+ document.getElementById("email").value +"<br><input type='submit' onclick='defaultFunction()' value='Fill Again'>";
+            // }
+            // function defaultFunction(){
+            //     document.getElementById("div").innerHTML = "<form action='#'' onsubmit='displayData()'><label>Name: <input type='text' id='nam'></label><br><label>Email: <input type='email' id='email'></label><br><input type='submit' value='submit'></form>";
+            // }
+          
+            //Question 2
+            // function expandParagraph(){
+            //     document.getElementById("paragraph").innerHTML = "Pellentesque ullamcorper, neque sit amet fermentum dignissim, urna urna luctus purus, non faucibus magna magna eget nisl. Mauris ornare massa tincidunt eros bibendum, id viverra turpis ornare. Phasellus consectetur augue mi, ac pharetra mi finibus quis. Suspendisse suscipit luctus faucibus. Aliquam interdum risus in neque pulvinar, quis egestas magna venenatis. Etiam at convallis felis, sed porta leo. Vivamus vehicula eu tellus ut fermentum. Vestibulum facilisis mi urna, eget aliquam est tincidunt a. Nam tempus in tortor at rutrum. Nullam consectetur sit amet lacus in congue. Nunc vitae eros diam. Curabitur nisi sapien, sodales venenatis risus gravida, ultricies venenatis lectus. Sed bibendum felis lacus, ut molestie metus imperdiet et. Curabitur ut arcu tincidunt, rutrum turpis vel, aliquam urna.<a href='javascript:void(0)' onclick='defaultFunction()'>Show less</a>"
+            // }    
+            // function defaultFunction(){
+            //     document.getElementById("paragraph").innerHTML = "Pellentesque ullamcorper, neque sit amet fermentum dignissim, urna urna luctus purus, non faucibus magna magna eget nisl. Mauris ornare massa tincidunt eros bibendum, id viverra turpis ornare. Phasellus consectetur augue mi, ac pharetra mi finibus quis. <a href='javascript:void(0)' onclick='expandParagraph()'>Read more</a>"
+            // }
+
+            //Question 3
+            // var classes = [5,6,8,6,5,9,10,7,4,2], deleted = [], names = ["Aaran", "Aarez", "Arman", "Aaron", "Aaryn", "Aayan", "Aazaan", "Abaan", "Abbas", "Abdallah"];  
+            // var ID;    
+            
+            // function createTable(){
+            //     document.getElementById("form").innerHTML = "";
+            //     var div = document.getElementById("table");
+            //     if(deleted.length == names.length)
+            //         div.innerHTML = "<p>No More Rows Left! Click to <a href='#' onclick='reset()'>Recreate Table</a></p>";
+            //     else{
+            //         div.innerHTML =  "<table><tr><th>Index</th><th>Name</th><th>Class</th><th>Delete</th><th>Edit</th></tr> ";
+            //         for(var i=0; i<names.length;i++){
+            //             if(deleted.indexOf(i) < 0)
+            //             div.innerHTML += "<tr><td> "+i+" </td><td> "+names[i]+" </td><td> "+classes[i]+" </td><td> <input type='button' id = "+i+" value='Delete' onclick='deleteRow(this.id)'></td><td> <input type='button' id = "+i+" value='Edit' onclick='defaultFunction(this.id)'></td></tr><br>"; 
+            //         }                      
+            //         div.innerHTML += "</table>";
+            //     }
+            // }
+            // function deleteRow(i){
+            //     deleted.push(parseInt(i));
+            //     createTable();
+            // }
+            // function defaultFunction(id){
+            //     var nam,clas,update;
+            //     ID = id;
+            //     if(!id)
+            //         { nam = ""; clas = ""; update = "";}
+            //     else
+            //         { nam = names[id]; clas = classes[id]; update = "<input type='submit' onclick='updateExisting()' value='Update Existing'>";}    
+            //     document.getElementById("form").innerHTML =  "<form action='javascript:void(0)' onsubmit='addNewRecord()'><label>Name: <input type='text' required value='"+nam+"' id='nam'></label><br><label>Class: <input type='text' required value='"+clas+"' id='clas'></label><br><input type='submit' value='Create New'>"+update+"</form>";        
+            // }
+            // function updateExisting(){
+            //     classes[ID] = document.getElementById("clas").value;
+            //     names[ID] = document.getElementById("nam").value; 
+            //     createTable();
+            // }
+            // function addNewRecord(){
+            //     classes.push(document.getElementById("clas").value);
+            //     names.push(document.getElementById("nam").value);
+            //     createTable();
+            // }
+            // function reset(){
+            //     deleted.splice(0,names.length);
+            //     createTable();
+            // }
+        </script>
+    </head>
+
+    <body onload="defaultFunction(false)">
+        <!-- Question 1 -->
+        <!-- <div id="div"></div> -->
+
+        <!-- Question 2 -->
+        <!-- <p id ="paragraph"></p> -->
+
+        <!-- Question 3 -->
+        <!-- <div id="table"></div><br>
+        <div id="form"></div> -->
+    </body>
+</html>

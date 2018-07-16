@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<body>
+
+<h1>User Registration Form</h1>
+<form action="" method="post">
+<table>
+
+<tr>
+   <td> <label for="user">User Name:<label></td>
+   <td> <input type="text" name="name" id="user"> </td>
+</tr>
+
+<tr>
+   <td> <label for="pass">Password:<label></td>
+   <td> <input type="password" name="pass" id="pass"> </td>
+</tr>
+
+<tr>
+   <td> <label for="DoB">Date of Birth:<label></td>
+   <td> <input type="date" name="DoB" id="DoB"> </td>
+</tr>
+
+<tr>
+   <td> <label for="url">Web URL:<label></td>
+   <td> <input type="url" name="url" id="url"> </td>
+</tr>
+
+<tr>
+   <td> <label for="add">Address:<label></td>
+   <td> <input type="text" name="add" id="add"> </td>
+</tr>
+
+<tr>
+   <td> <label for="city">City:<label></td>
+   <td> <select id="city" name="city"> 
+<option value="karachi">Karachi</option>
+<option value="peshawar">Peshawar</option>
+<option value="quetta">Quetta</option>
+<option value="lahore">Lahore</option>
+<option value="isl">Islamabad</option>
+<option value="murree">Murree</option>
+</td> 
+</tr>
+
+<tr>
+   <td> <label for="state">State:<label></td>
+   <td> <input type="text" name="state" id="state"></td> 
+</tr>
+
+<tr>
+   <td> <label for="zip">Zip:<label></td>
+   <td> <input type="text" name="zip" id="zip"> </td>
+</tr>
+
+
+<tr>
+   <td> <label for="mag">Magazine:<label></td>
+   <td> <select id="mag" name="mag" multiple="multiple"> 
+<option value="nw">Newsweek</option>
+<option value="time">Time</option>
+<option value="fortune">Fortune</option>
+<option value="tvg">TV Guide</option>
+</td> 
+</tr>
+
+</table>
+
+<label>Additional Comments:<br><textarea name="comments" cols="40" rows="5"></textarea></label>
+<br>
+<label>Upload your profile picture: <input type="file" name="dp.jpg"></label>
+<br>
+<input id="s"type="submit" value="Send your order">
+</form>
+
+<style>
+   body{ background-color:grey;}
+   h1{ background-color:rgb(0,175,0); color:white;}
+   #s {background-color:rgb(0,175,0);}
+</style>
+</body>
+</html>

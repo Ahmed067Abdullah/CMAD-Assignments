@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <style>
+            .format {
+
+                width: 250px;
+                height: 230px;
+
+            }
+
+            /* Modal starts */
+
+            /* The Modal (background) */
+
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 500;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            /* Modal Content (image) */
+
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+
+            /* Add Animation - Zoom in the Modal */
+
+            .modal-open {
+                animation-name: zoomIn;
+                animation-duration: 0.6s;
+            }
+
+            @keyframes zoomIn {
+                from {
+                    transform: scale(0)
+                }
+                to {
+                    transform: scale(1)
+                }
+            }
+
+            .modal-close {
+                animation-name: zoomOut;
+                animation-duration: 0.6s;
+            }
+
+            @keyframes zoomOut {
+                from {
+                    transform: scale(1)
+                }
+                to {
+                    transform: scale(0)
+                }
+            }
+
+            /* The Close Button */
+
+            .close {
+                position: absolute;
+                top: 50px;
+                right: 10%;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: normal;
+                transition: 0.3s;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* modal ends */
+        </style>
+        <script>
+                // Question 1
+                // var pics = ['./images/1.jpg','./images/2.jpg','./images/3.jpg','./images/4.png','./images/5.jpg','./images/6.jpg','./images/7.png','./images/12.jpg','./images/13.jpg','./images/14.png','./images/15.jpg'];  
+                // function defaultFunction(){
+                //     modal = document.getElementById("modal");
+                //     for(var i=0; i<pics.length; i++)
+                //         document.getElementById("pics").innerHTML += "<img id="+i+" width=200px height=200px onclick='showImage(id)' src='"+pics[i]+"'>";
+                // }
+                // function onClosedImagModal(){
+                //     modal.classList.remove('modal-open');
+                //     modal.classList.add('modal-close');
+                //     setTimeout(()=>{ modal.style.display = "none"; }, 550);
+                // }
+                // function showImage(id){
+                //     modal.classList.add('modal-open');         
+                //     modal.classList.remove('modal-close');
+                //     modal.style.display = "block";
+                //     document.getElementById("modal-img").src = pics[id];  
+                // }
+
+                //Question 2
+                // function defaultFunction(){
+                //     para = document.getElementById("para");
+                // }
+                // function zoomIn() {  
+                //     if(para.style.fontSize == '100px')
+                //         alert("Font Size can't be more than 200 pixels");
+                //     else
+                //         para.style.fontSize =  (parseInt(para.style.fontSize) + 10) +"px";
+                // }
+                // function zoomOut() {
+                //     var para = document.getElementById("para");
+                //     if(para.style.fontSize == '10px')
+                //         alert("Font Size can't be less than 10 pixels");
+                //     else
+                //         para.style.fontSize = (parseInt(para.style.fontSize) - 10) + "px"; 
+                // }
+        </script>
+    </head>
+
+    <body onload="defaultFunction()">
+        <!-- Question 1 -->
+         <!-- <div id="modal" class="modal">
+            <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+            <img class="modal-content" id="modal-img" src="./images/1.jpg">
+        </div>
+        <div id="pics">
+
+        </div>  -->
+
+        <!-- Question 2 -->
+        <!-- <p id="para" style="font-size:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacus dui, scelerisque vitae posuere quis, tempus
+            vel dui. Donec varius elementum tortor, tempor vestibulum turpis pharetra ut. Donec rutrum quam libero, et ornare
+            ante finibus ac. Etiam et odio nec nibh laoreet ornare eu quis odio. Quisque aliquam, lectus sit amet vehicula tincidunt,
+            velit est tincidunt ante, nec lacinia magna nisl non enim. Nullam diam enim, pharetra in bibendum eget, faucibus
+            vitae enim. Maecenas accumsan nulla risus, sit amet auctor metus feugiat in. Nullam sodales elit efficitur nulla
+            auctor, egestas iaculis mauris interdum. Vestibulum ac ante elit.</p>
+        <input type="button" onclick="zoomIn()" value="+">
+        <input type="button" onclick="zoomOut()" value="-"> -->
+    </body>
+</html>

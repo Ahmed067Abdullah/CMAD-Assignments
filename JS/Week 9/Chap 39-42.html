@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <script>
+            //Question 1
+            // var a = 4;
+            // var b = 3;
+            // var ans = power(a,b)
+            // alert(a+" raised to the power "+b+" equals to "+ans)
+
+            // function power(num1,num2)
+            // {
+            //     if(num2 == 0)
+            //         return 1;
+            //     return num1 * power(num1,num2-1)    
+            // }
+
+            //Question 2
+            // var year = +prompt("Enter year");
+            // if( (year % 400 == 0 || year % 100 != 0) && (year % 4 == 0))
+            //     alert("It is a leap year");
+            // else
+            //     alert("It is not a leap year");    
+
+            //Question 3
+            // var a = +prompt("Enter the side of triangle")
+            // var b = +prompt("Enter the side of triangle")
+            // var c = +prompt("Enter the side of triangle")
+            // var area = triangle(a,b,c)
+            // alert("Area of the given triangle is "+area);
+
+            // function triangle(a,b,c)
+            // {
+            //     var s = (a+b+c)/2;
+            //     var area = s * (s-a) * (s-b) * (s-c);
+            //     return area;
+            // }
+
+            //Question 4    
+            // var a = +prompt("Enter marks of 1st subject")
+            // var b = +prompt("Enter marks of 2nd subject")
+            // var c = +prompt("Enter marks of 3rd subject")
+            // main(a,b,c);
+
+            // function main(a,b,c)
+            // {
+            //     var avg = average(a,b,c);
+            //     var per = percentage(a,b,c);
+            //     alert("Average is "+avg +"\nPercentage is "+per)
+            // }
+
+            // function average(a,b,c)
+            // {
+            //     return((a+b+c)/3)
+            // }
+
+            // function percentage(a,b,c)
+            // {
+            //     return( ( (a+b+c) / 300 ) * 100 )
+            // }
+
+            //Question 5
+            // var str = prompt("Enter a string");
+            // var chr = prompt("Enter character to search in string");
+            // var index = indexOfChar(str,chr);
+            // if(index < 0)
+            //     alert("Charcter doesn't exist in the string");
+            // else
+            //     alert("The character is found at index "+index);
+
+            // function indexOfChar(string,char)
+            // {
+            //     for(i=0; i < string.length ; i++ )
+            //     {
+            //         if(string[i] == char)
+            //             return i;
+            //     }
+            //     return -1;
+            // }    
+
+            //Question 6
+            // var str = prompt("Enter a sentence");
+            // var vowelRemoved = removeVowel(str);
+            // alert(vowelRemoved);
+
+            // function removeVowel(string)
+            // {
+            //     var temp;
+            //     for(i=0; i < string.length ; i++)
+            //     {
+            //         if(string[i] != "a" && string[i] != "e" && string[i] != "i" && string[i] != "o" && string[i] != "u" && string[i] != "A" && string[i] != "E" && string[i] != "I" && string[i] != "O" && string[i] != "U")
+            //             {
+            //                 temp += string[i]
+            //             }
+            //     }
+            //     return temp.replace("undefined","")
+            // }
+
+            //Question 7
+           // var string = "Pleases read this application and give me gratuity";
+            // var temp = string.toLowerCase();    
+            // var vowelCount = 0;
+            // var occurance = [];
+            
+            // for(i=0; i <= temp.length-2; i++)
+            // {
+            //     var flag1 = vowelCheck(temp[i]);
+            //     var flag2 = vowelCheck(temp[i+1]);
+            //     if (flag1 == true && flag2 == true)
+            //     {
+            //         vowelCount++;
+            //         occurance.push(i);
+            //         occurance.push(i+1);
+            //     }  
+            // }
+            
+            // for(i=0; i < temp.length ; i++)
+            // {
+            //     if(occurance.indexOf(i) >= 0)
+            //         document.write("<b><u>"+string[i]+"</u></b>")
+            //     else
+            //         document.write(string[i]);    
+            // }
+            
+            // document.write("<br>There are "+vowelCount+" occurances where the given string contains two consecutive vowels")
+
+            // function vowelCheck(char)
+            // {
+            //     switch(char)
+            //     {
+            //         case "a":
+            //         case "e":
+            //         case "i":
+            //         case "o":    
+            //         case "u":
+            //                 return true 
+            //         default:
+            //                 return false
+            //     }
+            // }
+
+            //Question 8
+            // var km = +prompt("Enter distance in km")
+            // var m = meter(km)
+            // var feet = feet(km)
+            // var inches = inches(km)
+            // var cm = centimeter(km)
+            // document.write("In km: "+km+"<br>In Meters: "+m+"<br>In Feet: "+feet+"<br>In Inches: "+inches+"<br>In Centimeters: "+cm)    
+            // function meter(km)
+            // {
+            //     return km *1000;
+            // }
+
+            // function feet(km)
+            // {
+            //     return km*3280.84;
+            // }
+
+            // function inches(km)
+            // {
+            //     return km*39370.1;
+            // }
+
+            // function centimeter(km)
+            // {
+            //     return km*100000;
+            // }
+
+            //Question 9
+            // var hours = +prompt("Enter number of working hours");
+            // var overTimePay;
+            // if(hours > 40)
+            // {
+            //     overTimePay = (hours - 40) * 12; 
+            // }    
+            // else{
+            //     overTimePay = 0;
+            // }
+            // alert("Over time pay would be "+overTimePay)
+          
+            //Question 10
+            // var amount = +prompt("Enter amount to withdraw");
+            // var hundreds,fifties,tens;
+            
+            // var temp = amount;
+            // hundreds = parseInt(temp/100);
+            
+            // temp = amount - (hundreds * 100);
+            // fifties = parseInt(temp/50);
+            
+            // temp = amount - (hundreds * 100) - (fifties * 50);
+            // tens = parseInt(temp/10);
+            
+            // alert("You will have "+hundreds+" hundred notes, "+fifties+" fifty notes and "+tens+" ten notes") 
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
