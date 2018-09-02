@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Chat App</title>
@@ -11,21 +10,21 @@
 
         <script>
             const username = prompt("Enter Your name");
-            let msgArray = [];
+            let msgArray;
             getMessagesFromLocalStorage()
             
             function getMessagesFromLocalStorage(){
                 msgArray = [];
                 const savedMsgs = JSON.parse(localStorage.getItem("messages"));
                 if(savedMsgs){
-                    const mappedArray = savedMsgs.reduce((str,msg) => {
+                    const reducedArray = savedMsgs.reduce((str,msg) => {
                         msgArray.push(msg);
                         return str += "<li>" + msg.user + ": "+ msg.message + "</li>";
                     },'');
-                    document.getElementById("messages").innerHTML = mappedArray;
+                    document.getElementById("messages").innerHTML = reducedArray;
                 }
             }
-            setInterval(getMessagesFromLocalStorage,1000);
+            setInterval(getMessagesFromLocalStorage,2000);
 
             function sendMessage(){
                 const msg = document.getElementById("inputMessage").value;
