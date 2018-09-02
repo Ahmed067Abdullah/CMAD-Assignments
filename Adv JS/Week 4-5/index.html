@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chat App</title>
+    </head>
+    <body>
+        <ul id="messages"></ul>
+        <input type="text" id="inputMessage" autofocus>
+        <input type="button" value="Send" onclick="sendMessage()">
+
+        <script>
+            const username = prompt("Enter Your name");
+            let msgArray = [];
+            getMessagesFromLocalStorage()
+            
+            function getMessagesFromLocalStorage(){
+                msgArray = [];
+                const savedMsgs = JSON.parse(localStorage.getItem("messages"));
+                if(savedMsgs){
+                    const mappedArray = savedMsgs.reduce((str,msg) => {
+                        msgArray.push(msg);
+                        return str += "<li>" + msg.user + ": "+ msg.message + "</li>";
+                    },'');
+                    document.getElementById("messages").innerHTML = mappedArray;
+                }
+            }
+            setInterval(getMessagesFromLocalStorage,1000);
+
+            function sendMessage(){
+                const msg = document.getElementById("inputMessage").value;
+                document.getElementById("inputMessage").value = '';
+                msgArray.push({"user": username, "message":msg });
+                document.getElementById("messages").innerHTML += "<li>" + username + ": "+msg + "</li>";
+                localStorage.setItem("messages", JSON.stringify(msgArray));
+            }
+        </script>
+    </body>
+</html>

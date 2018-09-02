@@ -1,0 +1,58 @@
+Chat Requirement
+
+HTML
+---------------------------
+input, button, ul
+
+in JS
+---------------------------------
+global chats array; array of object
+
+check localStorage for previous chats
+
+if exist assign localStorage chat in chat array
+else create empty chat array
+
+get user name from prompt
+message -> object -> username , text
+onsend ->  push new message in chat array
+
+after psuh on chat array 
+-----------------------------
+save user chat on localStorage
+save on every message onsend function
+--------------------------
+display chat messages
+
+loop over chat array
+
+before loop
+---------------------
+get ul element
+set ul innerHTML = ''
+
+inside loop
+ul.innerHTML += "<li>" user "</li>"
+
+-------------------
+
+to show chat on other tabs
+
+call setInterval()
+inside setInterval callback function
+
+--------------------------
+display chat messages
+
+loop over chat array
+
+before loop
+---------------------
+get ul element
+set ul innerHTML = ''
+
+inside loop
+ul.innerHTML += "<li>" user "</li>"
+
+-------------------
+
